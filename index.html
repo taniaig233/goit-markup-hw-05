@@ -531,7 +531,151 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-subscribe-form-wrapper">
+          <p class="text-subscribe-form">Subscribe</p>
+          <form class="footer-subscribe-form">
+            <input
+              class="footer-subscribe-form-field"
+              type="email"
+              name="subscriber-email"
+              id="subscriber-email"
+              placeholder="E-mail"
+              required
+            />
+            <button class="footer-subscribe-form-btn" type="submit">
+              Subscribe
+              <svg class="footer-subscribe-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-frame"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button
+          class="modal-close-btn"
+          type="button"
+          area-label="modal-close-button"
+        >
+          <svg
+            class="modal-close-btn-icon"
+            wdth="8px"
+            height="8px"
+            area-label="modal-close-button"
+          >
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="request-form-description">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="request-form">
+          <div class="request-form-field-wrapper">
+            <label class="request-form-field-label" for="user-name">
+              Name
+            </label>
+            <div class="request-form-input-wrapper">
+              <input
+                class="request-form-field"
+                type="text"
+                name="user-name"
+                id="user-name"
+                required
+                pattern="[a-zA-Zа-яА-ЯіЇіІєЄйЙґҐ']+"
+              />
+              <svg
+                class="request-form-icon"
+                width="18"
+                height="18"
+                area-label="request-form-icon"
+              >
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="request-form-field-wrapper">
+            <label class="request-form-field-label" for="user-phone">
+              Phone
+            </label>
+            <div class="request-form-input-wrapper">
+              <input
+                class="request-form-field"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+              />
+              <svg
+                class="request-form-icon"
+                width="18"
+                height="18"
+                area-label="request-form-icon"
+              >
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="request-form-field-wrapper">
+            <label class="request-form-field-label" for="user-email">
+              Email
+            </label>
+            <div class="request-form-input-wrapper">
+              <input
+                class="request-form-field"
+                type="email"
+                name="user-email"
+                id="user-email"
+                required
+              />
+              <svg
+                class="request-form-icon"
+                width="18"
+                height="18"
+                area-label="request-form-icon"
+              >
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="request-form-field-wrapper">
+            <label class="request-form-field-label" for="user-comment">
+              Comment
+            </label>
+            <textarea
+              class="request-form-comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            >
+            </textarea>
+          </div>
+          <div class="request-form-checkbox-wrapper">
+            <input
+              class="request-form-checkbox-field visually-hidden"
+              type="checkbox"
+              name="user-policy"
+              id="user-policy"
+              value="true"
+              required
+            />
+            <label class="request-form-checkbox-label" for="user-policy">
+              <span class="request-form-own-checkbox">
+                <svg class="request-form-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="privete-policy-link" href=""> Privacy Policy </a>
+            </label>
+          </div>
+          <button class="request-form-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

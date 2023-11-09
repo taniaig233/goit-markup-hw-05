@@ -812,7 +812,7 @@ header .logo-type {
   height: 40px;
   border-radius: 4px;
   border: 1px solid var(--WHITE, #fff);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background: var(--NAVY-BLUE, #2e2f42);
   padding-left: 16px;
   color: #ffffff;

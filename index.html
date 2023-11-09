@@ -385,23 +385,24 @@
         <div class="container box-fourth-container">
           <h2 class="second-title">Our Portfolio</h2>
           <ul class="menu-image-two">
-            <div class="overlay-box">
-              <li class="menu-image-items-portfolio">
+            <li class="menu-image-items-portfolio">
+              <div class="overlay-box">
                 <img src="./images/banking.jpg" alt="banking" width="360" />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage Apps
                 </p>
+              </div>
 
-                <div class="third-title-box2">
-                  <h3 class="third-title">Banking App</h3>
-                  <p class="third-title-text">App</p>
-                </div>
-              </li>
-            </div>
-            <div class="overlay-box">
-              <li class="menu-image-items-portfolio">
+              <div class="third-title-box2">
+                <h3 class="third-title">Banking App</h3>
+                <p class="third-title-text">App</p>
+              </div>
+            </li>
+
+            <li class="menu-image-items-portfolio">
+              <div class="overlay-box">
                 <img
                   class="cashless-payment"
                   src="./images/payment.jpg"
@@ -413,45 +414,48 @@
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage Apps
                 </p>
+              </div>
 
-                <div class="third-title-box2">
-                  <h3 class="third-title">Cashless Payment</h3>
-                  <p class="third-title-text">Marketing</p>
-                </div>
-              </li>
-            </div>
-            <div class="overlay-box">
-              <li class="menu-image-items-portfolio">
+              <div class="third-title-box2">
+                <h3 class="third-title">Cashless Payment</h3>
+                <p class="third-title-text">Marketing</p>
+              </div>
+            </li>
+
+            <li class="menu-image-items-portfolio">
+              <div class="overlay-box">
                 <img src="./images/laptop.jpg" alt="meditation" width="360" />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage Apps
                 </p>
+              </div>
 
-                <div class="third-title-box2">
-                  <h3 class="third-title">Meditation App</h3>
-                  <p class="third-title-text">App</p>
-                </div>
-              </li>
-            </div>
-            <div class="overlay-box">
-              <li class="menu-image-items-portfolio">
+              <div class="third-title-box2">
+                <h3 class="third-title">Meditation App</h3>
+                <p class="third-title-text">App</p>
+              </div>
+            </li>
+
+            <li class="menu-image-items-portfolio">
+              <div class="overlay-box">
                 <img src="./images/taxi.jpg" alt="taxi Service" width="360" />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage Apps
                 </p>
+              </div>
 
-                <div class="third-title-box2">
-                  <h3 class="third-title">Taxi Service</h3>
-                  <p class="third-title-text">Marketing</p>
-                </div>
-              </li>
-            </div>
-            <div class="overlay-box">
-              <li class="menu-image-items-portfolio">
+              <div class="third-title-box2">
+                <h3 class="third-title">Taxi Service</h3>
+                <p class="third-title-text">Marketing</p>
+              </div>
+            </li>
+
+            <li class="menu-image-items-portfolio">
+              <div class="overlay-box">
                 <img
                   src="./images/illustration.jpg"
                   alt="illustrations"
@@ -462,26 +466,27 @@
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage Apps
                 </p>
-                <div class="third-title-box2">
-                  <h3 class="third-title">Screen Illustrations</h3>
-                  <p class="third-title-text">Design</p>
-                </div>
-              </li>
-            </div>
-            <div class="overlay-box">
-              <li class="menu-image-items-portfolio">
+              </div>
+              <div class="third-title-box2">
+                <h3 class="third-title">Screen Illustrations</h3>
+                <p class="third-title-text">Design</p>
+              </div>
+            </li>
+
+            <li class="menu-image-items-portfolio">
+              <div class="overlay-box">
                 <img src="./images/girl.jpg" alt="online courses" width="360" />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage Apps
                 </p>
-                <div class="third-title-box2">
-                  <h3 class="third-title">Online Courses</h3>
-                  <p class="third-title-text">Marketing</p>
-                </div>
-              </li>
-            </div>
+              </div>
+              <div class="third-title-box2">
+                <h3 class="third-title">Online Courses</h3>
+                <p class="third-title-text">Marketing</p>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -535,14 +540,16 @@
         <div class="footer-subscribe-form-wrapper">
           <p class="text-subscribe-form">Subscribe</p>
           <form class="footer-subscribe-form">
-            <input
-              class="footer-subscribe-form-field"
-              type="email"
-              name="subscriber-email"
-              id="subscriber-email"
-              placeholder="E-mail"
-              required
-            />
+            <label class="footer-subscribe-form-label">
+              <input
+                class="footer-subscribe-form-field"
+                type="email"
+                name="subscriber-email"
+                id="subscriber-email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
             <button class="footer-subscribe-form-btn" type="submit">
               Subscribe
               <svg class="footer-subscribe-form-icon" width="24" height="24">
@@ -555,17 +562,8 @@
     </footer>
     <div class="backdrop is-open">
       <div class="modal">
-        <button
-          class="modal-close-btn"
-          type="button"
-          area-label="modal-close-button"
-        >
-          <svg
-            class="modal-close-btn-icon"
-            wdth="8px"
-            height="8px"
-            area-label="modal-close-button"
-          >
+        <button class="modal-close-btn" type="button">
+          <svg class="modal-close-btn-icon" width="8px" height="8px">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -586,12 +584,7 @@
                 required
                 pattern="[a-zA-Zа-яА-ЯіЇіІєЄйЙґҐ']+"
               />
-              <svg
-                class="request-form-icon"
-                width="18"
-                height="18"
-                area-label="request-form-icon"
-              >
+              <svg class="request-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -610,12 +603,7 @@
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                 title="xxx-xxx-xx-xx"
               />
-              <svg
-                class="request-form-icon"
-                width="18"
-                height="18"
-                area-label="request-form-icon"
-              >
+              <svg class="request-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
@@ -632,17 +620,12 @@
                 id="user-email"
                 required
               />
-              <svg
-                class="request-form-icon"
-                width="18"
-                height="18"
-                area-label="request-form-icon"
-              >
+              <svg class="request-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
-          <div class="request-form-field-wrapper">
+          <div class="request-form-field-wrapper-comment">
             <label class="request-form-field-label" for="user-comment">
               Comment
             </label>
@@ -658,12 +641,12 @@
             <input
               class="request-form-checkbox-field visually-hidden"
               type="checkbox"
-              name="user-policy"
-              id="user-policy"
+              name="user-privacy"
+              id="user-privacy"
               value="true"
               required
             />
-            <label class="request-form-checkbox-label" for="user-policy">
+            <label class="request-form-checkbox-label" for="user-privacy">
               <span class="request-form-own-checkbox">
                 <svg class="request-form-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-vector"></use>

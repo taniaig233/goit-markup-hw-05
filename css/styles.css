@@ -573,6 +573,8 @@ header .logo-type {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -584,7 +586,10 @@ header .logo-type {
   min-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
@@ -601,11 +606,20 @@ header .logo-type {
   right: 24px;
   border-radius: 50%;
   border: 1px solid #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background-color: #404bbf;
+  border: none;
 }
 
 .modal-close-btn:hover .modal-close-btn-icon,
@@ -630,7 +644,7 @@ header .logo-type {
   display: block;
   font-size: 12px;
   font-weight: 400;
-  line-height: 1, 17;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--LIGHT-SLATE, #8e8f99);
   margin-bottom: 4px;
@@ -642,7 +656,9 @@ header .logo-type {
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   padding-left: 38px;
-  transition: border-color 250ms linear;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  outline: transparent;
 }
 
 .request-form-field:focus {
@@ -658,6 +674,9 @@ header .logo-type {
 .request-form-field-wrapper {
   margin-bottom: 8px;
 }
+.request-form-field-wrapper-comment {
+  margin-bottom: 16px;
+}
 
 .request-form-input-wrapper {
   position: relative;
@@ -666,9 +685,9 @@ header .logo-type {
 .request-form-icon {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 16px;
   transform: translate(-164px, -50%);
-  transition: fill 250ms linear;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .request-form-comment {
@@ -684,7 +703,9 @@ header .logo-type {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-  transition: border-color 250ms linear;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  outline: transparent;
 }
 
 .request-form-comment::placeholder {
@@ -707,6 +728,10 @@ header .logo-type {
   border: 1px solid rgba(46, 47, 66, 0.4);
   fill: transparent;
   margin-right: 8px;
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .request-form-checkbox-label {
@@ -729,7 +754,8 @@ header .logo-type {
   + .request-form-checkbox-label
   .request-form-own-checkbox {
   background-color: #404bbf;
-  fill: #ffffff;
+  fill: #f4f4fd;
+  border: none;
 }
 
 .request-form-checkbox-field:focus
@@ -739,7 +765,7 @@ header .logo-type {
 }
 
 .request-form-button {
-  display: inline-flex;
+  display: block;
   padding: 16px 32px;
   justify-content: center;
   align-items: center;
@@ -752,10 +778,13 @@ header .logo-type {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   margin-left: 95px;
   margin-right: 96px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-subscribe-form {
@@ -785,27 +814,31 @@ header .logo-type {
   border: 1px solid var(--WHITE, #fff);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background: var(--NAVY-BLUE, #2e2f42);
-  padding: 8px 16px;
+  padding-left: 16px;
   color: #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 .footer-subscribe-form-field::placeholder {
   color: var(--WHITE, #fff);
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 2;
-  letter-spacing: 0.04em;
 }
 
 .footer-subscribe-form-btn {
-  display: inline-flex;
-  position: relative;
-  width: 165px;
-  padding: 8px 24px;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  position: relative;
+  min-width: 165px;
+  height: 40px;
+  padding: 8px 24px;
   border-radius: 4px;
+  cursor: pointer;
+  border: none;
   background: var(--IRIS, #4d5ae5);
-  margin-left: 24px;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -820,4 +853,9 @@ header .logo-type {
   left: 50%;
   transform: translate(100%, -50%);
   margin-left: 16px;
+}
+
+.footer-subscribe-form {
+  display: flex;
+  gap: 24px;
 }
